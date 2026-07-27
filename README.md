@@ -94,7 +94,7 @@ Datasets are **not included** in this repository and should be obtained from the
 | Financial PhraseBank | 2000 | **84.70%** | **81.88%** |
 | Twitter Financial News | 11872 | **78.09%** | **71.84%** |
 
-These metrics correspond to the current hybrid retrieval pipeline. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}
+These metrics correspond to the current hybrid retrieval pipeline.
 
 ---
 
