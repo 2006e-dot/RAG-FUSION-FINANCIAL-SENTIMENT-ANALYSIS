@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+
+# Chroma DB
+chroma_db/
+
+# Model files
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Prediction outputs
+predictions_*.csv
+
+# Result files
+*_results*.txt
+results*.txt
+twitter_*results*.txt
+
+# Logs
+*.log
+
+# Datasets
+train.csv
+train_split.csv
+test_sentifin.csv
+test_phrasebank.csv
+sent_train.csv
+sent_valid.csv
+eval.csv
+data_raw.csv
