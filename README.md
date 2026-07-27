@@ -145,6 +145,3 @@ Future work includes:
 
 ---
 
-## License
-
-This repository is intended for research and educational purposes.
