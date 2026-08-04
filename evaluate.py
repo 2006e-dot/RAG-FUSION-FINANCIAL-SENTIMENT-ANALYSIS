@@ -8,8 +8,8 @@ from retriever import rag_fusion_retrieve
 from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 
-TEST_FILE="data_raw.csv"
-OUTPUT_FILE="predictions_harixn.csv"
+TEST_FILE="test_df3.csv"
+OUTPUT_FILE="predictions_tw1.csv"
 CHECKPOINT_EVERY=20
 SLEEP_TIME=0
 MAX_RETRIES=3
@@ -114,7 +114,7 @@ else:
 
     done_ids=set()
 
-rows=test_df.iloc[3100:].to_dict('records')
+rows=test_df.iloc[5000:].to_dict('records')
 for i,row in enumerate(tqdm(rows)):
     if row['doc_id'] in done_ids:
         continue

@@ -5,14 +5,14 @@ from sklearn.metrics import (
     classification_report,
     confusion_matrix
 )
-
-FILE1="predictions_train.csv"
-FILE2="predictions_valid.csv"
+FILE1="predictions_tw.csv"
+FILE2="predictions_tw1.csv"
 
 df1=pd.read_csv(FILE1)
 df2=pd.read_csv(FILE2)
 
-df2["doc_id"]=df2["doc_id"]+df1["doc_id"].max()+1
+start=df1["doc_id"].max()+1
+df2["doc_id"]=range(start,start+len(df2))
 
 df=pd.concat([df1,df2],ignore_index=True)
 

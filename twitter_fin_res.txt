@@ -1,0 +1,29 @@
+============================================================
+Samples            : 11819
+Accuracy           : 77.95%
+Macro Precision    : 74.64%
+Macro Recall       : 70.30%
+Macro F1           : 71.70%
+Weighted Precision : 77.98%
+Weighted Recall    : 77.95%
+Weighted F1        : 77.45%
+
+Classification Report
+
+              precision    recall  f1-score   support
+
+    negative     0.6437    0.6890    0.6656      1775
+     neutral     0.8094    0.8727    0.8399      7660
+    positive     0.7861    0.5474    0.6454      2384
+
+    accuracy                         0.7795     11819
+   macro avg     0.7464    0.7030    0.7170     11819
+weighted avg     0.7798    0.7795    0.7745     11819
+
+
+Confusion Matrix
+
+          positive  neutral  negative
+positive      1305     1033        46
+neutral        344     6685       631
+negative        11      541      1223
