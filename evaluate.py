@@ -76,7 +76,7 @@ def parse_prediction(text):
 
 def predict(headline,context):
 
-    for _ in range(MAX_RETRIES):
+    for _ in range(MAX_RETRIES):    
 
         try:
 
