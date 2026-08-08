@@ -167,13 +167,13 @@ def predict(headline,context):
 def get_prediction_color(label):
 
     if label=="positive":
-        return "positive"
+        return "🟢"
 
     if label=="negative":
-        return "negative"
+        return "🔴"
 
     if label=="neutral":
-        return "neutral"
+        return "🟡"
 
     return "Error"
 
