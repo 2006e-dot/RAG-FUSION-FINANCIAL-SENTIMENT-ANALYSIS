@@ -1,0 +1,41 @@
+Fine-Tuning Results
+Experimental Overview
+The Qwen2.5-3B-Instruct model was fine-tuned for financial sentiment
+classification using the Low-Rank Adaptation (LoRA) method. The
+objective was to adapt the pretrained language model to classify
+financial headlines into Positive, Neutral, and Negative sentiment
+categories.
+
+The fine-tuning process completed successfully over three epochs,
+comprising 384 optimization steps.
+Training and Evaluation Behavior
+The training loss decreased substantially during the initial stages of
+optimization and remained low as training progressed. The final training
+loss was 0.0674.
+
+The evaluation loss also decreased during the early stages of training,
+reaching an approximate minimum of 0.20 around optimization step
+234. During the later stages, it increased slightly and finished at
+0.2165.
+
+The difference between the final training and evaluation losses is
+0.1491. The lower training loss compared with the evaluation loss,
+together with the slight rise in evaluation loss near the end of
+training, suggests the possibility of mild overfitting. However, the
+observed curves do not by themselves establish severe overfitting.
+Generalization should be assessed further using independent test data
+and classification metrics such as accuracy, precision, recall, and
+Macro-F1.
+Numerical Summary
+  Metric                                           Value
+  Epochs                                               3
+Total optimization steps                           384
+Final training loss                             0.0674
+Final evaluation loss                           0.2165
+Approximate minimum evaluation loss             ~0.20
+Approximate step of minimum evaluation loss      ~234
+Training--evaluation loss difference            0.1491
+
+Note: The minimum evaluation loss and its corresponding step are
+estimates read from the training graph. Use the exact training logs for
+publication if available.
