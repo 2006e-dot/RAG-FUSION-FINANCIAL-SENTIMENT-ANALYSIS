@@ -35,7 +35,3 @@ Final evaluation loss                           0.2165
 Approximate minimum evaluation loss             ~0.20
 Approximate step of minimum evaluation loss      ~234
 Training--evaluation loss difference            0.1491
-
-Note: The minimum evaluation loss and its corresponding step are
-estimates read from the training graph. Use the exact training logs for
-publication if available.
